@@ -2,7 +2,7 @@
 
 ## Resources
 
-[ ] [Microsoft](https://learn.microsoft.com/en-us/training/modules/csharp-write-first/)
+-[ ] [Microsoft](https://learn.microsoft.com/en-us/training/modules/csharp-write-first/)
 
 ## BASIC SYNTAX
 
@@ -50,6 +50,16 @@ Methods
 > `test`
 >> test texts
 
-## section 3
+## ERROR HANDLING
 
-test
+### How to read error messages
+
+```cs
+(1,1): error CS0103: The name 'console' does not exist in the current context
+```
+
+`(1,1)`
+> the line and the column where the error is  
+
+`The name 'console' does not exist in the current context`
+> The rest of the message is what is wrong with it.
