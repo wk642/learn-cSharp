@@ -2,7 +2,7 @@
 
 ## Resources
 
--[ ] [Microsoft](https://learn.microsoft.com/en-us/training/modules/csharp-write-first/)
+- [ ] [Microsoft](https://learn.microsoft.com/en-us/training/modules/csharp-write-first/)
 
 ## BASIC SYNTAX
 
