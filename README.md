@@ -15,6 +15,7 @@ ___
 
 ### **Print things**
 
+`Console.WriteLine()`
 Appends a new line after the output.
 
 ```cs
@@ -22,9 +23,51 @@ Console.WriteLine("Hello World");
 ```
 
 :warning: **NOTES** :warning:  
-[ ] It is case sensitive.  
-[ ] `Console` is a class.  
-[ ] `WriteLine`is a method.
+
+- [ ] It is case sensitive.  
+- [ ] `Console` is a class.  
+- [ ] `WriteLine`is a method.
+- [ ] A return will be added to the end of the line.
+
+___
+
+`Console.Write()`
+
+```cs
+Console.Write("Congratulations!");
+Console.Write(" ");
+Console.Write("You wrote your first line of code.");
+
+// --> Congratulations! You wrote your first lines of code.
+```
+
+:warning **NOTES** :warninng:
+
+- [ ] This is one continuou line.
+- [ ] `Console` is the class.
+- [ ] `Write()` is the method.
+- [ ] There is no "return" or new line at the end.
+
+___
+
+`Console.Write() and Console.WriteLine()`
+
+```cs
+Console.WriteLine("Congratulations!");
+Console.Write(" ");
+Console.Write("You wrote your first line of code.");
+
+/* --> 
+Congratulations!
+ You wrote your first lines of code.
+*/
+```
+
+:warning: **NOTES** :warning:
+
+- [ ] There is a "enter" at the end of Congratulations.
+- [ ] The rest of it is all on one line.
+
 ___
 
 ### Data Types  
@@ -44,20 +87,24 @@ ___
 
 ### **Classes**
 
-#### **Console**  
+#### **`Console`**  
 
-Methods - `WriteLine()`
-
-> prints out what's inside the () to the console.  
+##### Methods
 
 ___
 
-Methods
+`WriteLine()`
 
-> `test`
->> test texts
+> prints out what's inside the () to the console and adds a return at the end.  
 
 ___
+
+`Write()`
+
+> Prints out what inside the () without a return at the end.
+
+___
+
 ## ERROR HANDLING
 
 ### How to read error messages
