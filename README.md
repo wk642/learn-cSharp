@@ -148,6 +148,7 @@ console.WriteLine("Hello World");
 >> `(1,1)` shows that the error happened on line 1 column 1 which would be the letter `c` in `console`
 
 ___
+
 #### error CS1012
 
 ```cs
@@ -163,4 +164,4 @@ Console.WriteLine('Hello World!');
 
 ## EXCERSICES
 
-[Simple Website](github.com/wk642/learn-csharp/simple-website-c-sharp)
+[Simple Website](/simple-website-c-sharp)
