@@ -160,3 +160,7 @@ Console.WriteLine('Hello World!');
 
 > change the single quotes to double quotes.
 >> `(1,19)` shows that the error happened on line 1 at the 19th character which is the `'` right before `Hello`
+
+## EXCERSICES
+
+[Simple Website](github.com/wk642/learn-csharp/simple-website-c-sharp)
