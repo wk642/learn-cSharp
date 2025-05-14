@@ -4,6 +4,10 @@
 
 - [ ] [Microsoft](https://learn.microsoft.com/en-us/training/modules/csharp-write-first/)
 
+## EXCERSICES
+
+[Simple Website](/simple-website-c-sharp)
+
 ## BASIC SYNTAX
 
 :warning: C# is : :warning:
@@ -161,7 +165,3 @@ Console.WriteLine('Hello World!');
 
 > change the single quotes to double quotes.
 >> `(1,19)` shows that the error happened on line 1 at the 19th character which is the `'` right before `Hello`
-
-## EXCERSICES
-
-[Simple Website](/simple-website-c-sharp)
