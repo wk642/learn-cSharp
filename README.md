@@ -91,6 +91,15 @@ ___
 
 ##### Methods
 
+<!-- template of methods 
+
+`Write()`
+
+> Prints out what inside the () without a return at the end.
+
+___
+-->
+
 ___
 
 `WriteLine()`
