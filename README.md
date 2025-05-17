@@ -8,6 +8,10 @@
 
 `dotnet --list-sdks` will show the versions, as of 2025 May 14th, we want to make sure that at least one of the sdks are version 8.
 
+## EXTENSIONS INSTALLED
+
+- [ ] [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
+
 ## EXCERSICES
 
 [Simple Website](/simple-website-c-sharp)
