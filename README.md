@@ -173,3 +173,14 @@ Console.WriteLine('Hello World!');
 
 > change the single quotes to double quotes.
 >> `(1,19)` shows that the error happened on line 1 at the 19th character which is the `'` right before `Hello`
+
+## RAZOR PAGES
+
+- [ ] Simplifies ASP.NET Core page organization.
+- [ ] Keeps related pages and their logic in their own namespace and directory.
+
+### When to use?
+
+- [ ] Generating dynamic UI.
+- [ ] Reduce duplication with partial views.
+- [ ] Prefer a page-focused approach.
