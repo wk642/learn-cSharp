@@ -184,3 +184,14 @@ Console.WriteLine('Hello World!');
 - [ ] Generating dynamic UI.
 - [ ] Reduce duplication with partial views.
 - [ ] Prefer a page-focused approach.
+
+### How to create a Razor Page
+
+1. Open up terminal and goto the directory where you want to create this.
+2. Type `dotnet new page --name PizzaList --namespace ContosoPizza.Pages --output Pages`
+    > What this does is the following:
+    >> The preceding command: Creates these two files in the ContosoPizza.Pages namespace:
+    >>> - PizzaList.cshtml -
+        the Razor page
+    >>> - PizzaList.cshtml.cs -
+        the accompanying PageModel class Stores both files in the project's Pages subdirectory.
