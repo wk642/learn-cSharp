@@ -195,3 +195,12 @@ Console.WriteLine('Hello World!');
         the Razor page
     >>> - PizzaList.cshtml.cs -
         the accompanying PageModel class Stores both files in the project's Pages subdirectory.
+
+> To set the `<title>` element for the page, use the @page directive:
+>> `ViewData["Title"] = "Pizza List 🍕";`
+
+<h1>Pizza List 🍕</h1>
+
+<!-- New Pizza form will go here -->
+
+<!-- List of pizzas will go here -->
