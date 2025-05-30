@@ -206,5 +206,32 @@ In this code, the PizzaService will get a list of pizzas, but it was not availab
 >> This registers the `PizzaService` class with the dependency injection container.
 >> `AddScoped` is a method. A new PizzaService object will be created for each HTTP request.
 
+At the top of the file
 > `using`
 >> tells the file that we will be using the types.
+
+``` cs
+public class PizzaListModel : PageModel
+{
+    // creating a private variable that will be refrenced to a PizzaService object. 
+    // readonly means that this can't be changed after it's set in the constructor.
+    private readonly PizzaService _service;
+
+    // This is a property that will be used to store the list of pizzas.
+    // IList<Pizza> type where the PizzaList property will hold a list of Pizza objects.
+    // It is set to default! to let the compiler know that it will be initialized later, so there's no need to check for null.
+    public IList<Pizza> PizzaList { get;set; } = default!;
+
+    // A constructor that takes a PizzaService object as a parameter.
+    public PizzaListModel(PizzaService service)
+    {
+        _service = service;
+    }
+
+    // An OnGet method is defined to aget the list of pizzas from the PizzaService object and store it in the PizzaList property.
+    public void OnGet()
+    {
+        PizzaList = _service.GetPizzas();
+    }
+}
+```
