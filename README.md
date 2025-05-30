@@ -187,6 +187,7 @@ Console.WriteLine('Hello World!');
 
 ### How to create a Razor Page
 
+#### Uses [this](https://learn.microsoft.com/en-us/training/modules/create-razor-pages-aspnet-core/4-exercise-add-new-razor-page) as reference
 1. Open up terminal and goto the directory where you want to create this.
 2. Type `dotnet new page --name PizzaList --namespace ContosoPizza.Pages --output Pages`
     > What this does is the following:
@@ -198,3 +199,12 @@ Console.WriteLine('Hello World!');
 
 > To set the `<title>` element for the page, use the @page directive:
 >> `ViewData["Title"] = "Pizza List 🍕";`
+
+In this code, the PizzaService will get a list of pizzas, but it was not available to be used yet, so we will need to add it to the dependency injection container.
+
+> `builder.Services.AddScoped<PizzaService>();`
+>> This registers the `PizzaService` class with the dependency injection container.
+>> `AddScoped` is a method. A new PizzaService object will be created for each HTTP request.
+
+> `using`
+>> tells the file that we will be using the types.
