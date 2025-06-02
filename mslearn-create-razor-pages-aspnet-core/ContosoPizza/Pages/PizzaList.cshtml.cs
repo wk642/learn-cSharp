@@ -6,32 +6,38 @@ using ContosoPizza.Services;
 namespace ContosoPizza.Pages
 {
     public class PizzaListModel : PageModel
-{
-    private readonly PizzaService _service;
-    public IList<Pizza> PizzaList { get;set; } = default!;
-
-    [BindProperty]
-    public Pizza NewPizza { get; set; } = default!;
-
-    public PizzaListModel(PizzaService service)
     {
-        _service = service;
-    }
+        private readonly PizzaService _service;
+        public IList<Pizza> PizzaList { get;set; } = default!;
 
-    public IActionResult OnPost()
-    {
-        if (!ModelState.IsValid || NewPizza == null)
+        [BindProperty]
+        public Pizza NewPizza { get; set; } = default!;
+
+        public PizzaListModel(PizzaService service)
         {
-            return Page();
+            _service = service;
         }
 
-        _service.AddPizza(NewPizza);
+        public IActionResult OnPost()
+        {
+            if (!ModelState.IsValid || NewPizza == null)
+            {
+                return Page();
+            }
 
-        return RedirectToAction("Get");
-    }
-    public void OnGet()
-    {
-        PizzaList = _service.GetPizzas();
-    }
-}
+            _service.AddPizza(NewPizza);
+
+            return RedirectToAction("Get");
+        }
+        public void OnGet()
+        {
+            PizzaList = _service.GetPizzas();
+        }
+        public IActionResult OnPostDelete(int id)
+        {
+            _service.DeletePizza(id);
+
+            return RedirectToAction("Get");
+        }
+    }   
 }
