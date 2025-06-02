@@ -228,6 +228,19 @@ public class PizzaListModel : PageModel
         _service = service;
     }
 
+    // Adding page handler for HTTP POST.
+    public IActionResult OnPost()
+    {
+       if (!ModelState.IsValid || NewPizza == null)
+       {
+           return Page();
+       }
+
+       _service.AddPizza(NewPizza);
+        // The RedirectToAction method is used to redirect the user to the Get page handler, which will re-render the page with the updated list of pizzas.
+       return RedirectToAction("Get");
+    }
+
     // An OnGet method is defined to aget the list of pizzas from the PizzaService object and store it in the PizzaList property.
     public void OnGet()
     {
