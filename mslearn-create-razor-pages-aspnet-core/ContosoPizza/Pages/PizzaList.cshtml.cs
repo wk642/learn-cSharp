@@ -10,6 +10,9 @@ namespace ContosoPizza.Pages
     private readonly PizzaService _service;
     public IList<Pizza> PizzaList { get;set; } = default!;
 
+    [BindProperty]
+    public Pizza NewPizza { get; set; } = default!;
+    
     public PizzaListModel(PizzaService service)
     {
         _service = service;

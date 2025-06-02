@@ -234,4 +234,12 @@ public class PizzaListModel : PageModel
         PizzaList = _service.GetPizzas();
     }
 }
+
 ```
+
+> `[BindProperty]`
+> `public Pizza NewPizza { get; set; } = default!;`
+>
+>> - NewPizza is a Pizza object.
+>> - The BindProperty attribute is used to bind the NewPizza property to the Razor page. When an HTTP POST request is made, the NewPizza property will be populated with the user's input.
+>> The default! keyword is used to initialize the NewPizza property to null. This prevents the compiler from generating a warning about the NewPizza property being uninitialized.
